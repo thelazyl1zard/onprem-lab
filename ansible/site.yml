@@ -1,0 +1,8 @@
+---
+
+- name: Basis-Setup auf arm-lab
+  hosts: arm_lab
+  become: true
+  roles:
+    - common
+    - redis

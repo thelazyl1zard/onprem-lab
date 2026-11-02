@@ -1,0 +1,11 @@
+---
+
+- name: Update package lists
+    ansible.builtin.apt:
+        update_cache: true
+        cache_valid_time: 3600
+
+- name: Install required packages
+    ansible.builtin.apt:
+        name: [redis-server, postgresql, nginx]
+        state: present

@@ -1,0 +1,4 @@
+[defaults]
+inventory ./inventory.ini
+remote user ansible
+host_key_checking False

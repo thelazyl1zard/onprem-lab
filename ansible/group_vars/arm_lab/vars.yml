@@ -1,0 +1,7 @@
+redis_password: "{{ vault_redis_password }}"
+redis_bind: "127.0.0.1 -::1"
+redis_aof: "yes"
+redis_save:
+    - "3600 1"
+    - "300 100"
+    - "60 10000"
